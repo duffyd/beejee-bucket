@@ -1,0 +1,26 @@
+{
+  "name": "beejee-bucket",
+  "version": "0.0.1",
+  "description": "Somewhere to store all my talk notes",
+  "main": "index.js",
+  "authors": {
+    "name": "Tim Knapp",
+    "email": "tim@emergetec.com"
+  },
+  "repository": "https://github.com/duffyd/beejee-bucket",
+  "scripts": {
+    "dev": "DEBUG=true vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@vuepress/plugin-active-header-links": "^1.7.1",
+    "@vuepress/plugin-back-to-top": "^1.7.1",
+    "@vuepress/plugin-blog": "^1.9.4",
+    "@vuepress/theme-blog": "^2.3.3",
+    "chalk": "^2.0.0",
+    "vuepress": "^1.8.2",
+    "vuepress-theme-hope": "^1.18.0",
+    "vuepress-plugin-fulltext-search": "^2.2.1"
+  }
+}
