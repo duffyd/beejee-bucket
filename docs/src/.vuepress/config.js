@@ -13,6 +13,7 @@ module.exports = config({
     ],
     sidebar: 'auto',
     sidebarDepth: 2,
+    sitemap: false,
     hostname: 'bj.kokorice.org',
   },
   plugins: [

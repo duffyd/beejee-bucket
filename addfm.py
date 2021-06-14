@@ -115,6 +115,7 @@ def tidyContent(tidiedcontent):
     if note_title and note_title.start() == 0:
         tidiedcontent = re.sub('(?:\*\*)(.*)(?:\*\*)', '# \g<1>', tidiedcontent, count=1)
     tidiedcontent = re.sub("(?:[^#])# (.*)", h1Toh2Repl, tidiedcontent)
+    tidiedcontent = re.sub("---## ", "---\n## ", tidiedcontent)
     return tidiedcontent
 
 def genTag(content):
