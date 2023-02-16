@@ -3,7 +3,7 @@ const { config } = require("vuepress-theme-hope");
 module.exports = config({
   title: 'BeeJee Bucket',
   description: 'Filing my study notes',
-  host: process.env.DEBUG ? '0.0.0.0' : 'localhost',
+  //host: process.env.DEBUG ? '0.0.0.0' : 'localhost',
   themeConfig: {
     nav: [
       {
@@ -15,6 +15,9 @@ module.exports = config({
     sidebarDepth: 2,
     sitemap: false,
     hostname: 'bj.kokorice.org',
+    mdEnhance: {
+      mermaid: true,
+    },
   },
   plugins: [
     '@vuepress/plugin-back-to-top',
